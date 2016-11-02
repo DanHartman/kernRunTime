@@ -1,8 +1,8 @@
 sample csv files:
   laserFiles/
-      FileLog.CSV
-      MachineTime.CSV
-
+    FileLog.CSV
+    MachineTime.CSV
+    
 Goals:
   transform MachineTime.CSV into an array formatted as:
 ```js
