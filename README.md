@@ -5,17 +5,20 @@ sample csv files:
 
 Goals:
   transform MachineTime.CSV into an array formatted as:
+  ```js
     { date: 11/02/2016, seconds: 18800 },
     { date: 11/01/2016, seconds: 23212 }
-
+```
   transform FileLog.CSV into an array formatted as:
+  ```js
     { date: 11/02/2016, job: 1, seconds: `Elapsed from H:MM:SS => seconds`},
     { date: 11/02/2016, job: 2, seconds: `Elapsed from H:MM:SS => seconds`},
     { date: 11/02/2016, job: 3, seconds: `Elapsed from H:MM:SS => seconds`},
     { date: 11/01/2016, job: 1, seconds: `Elapsed from H:MM:SS => seconds`},
     { date: 11/01/2016, job: 2, seconds: `Elapsed from H:MM:SS => seconds`}
-
+,,,
   map over MachineTime array in such away that
+  ```js
     var runtime = 0;
     var totaltime = 0;
     for(var i = 0; i < mt.length; i++) {
@@ -26,5 +29,5 @@ Goals:
         totaltime += mt[i].seconds - runtime
       }
     }
-
+```
 
