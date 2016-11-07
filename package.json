@@ -1,0 +1,11 @@
+{
+  "name": "kern",
+  "scripts": {
+    "start": "node .",
+    "test": "mocha -R spec test/index"
+  },
+  "dependencies": {
+    "csv-parse": "^1.1.7",
+    "moment": "^2.15.2"
+  }
+}
