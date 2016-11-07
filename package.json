@@ -7,5 +7,9 @@
   "dependencies": {
     "csv-parse": "^1.1.7",
     "moment": "^2.15.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
   }
 }
