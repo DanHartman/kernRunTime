@@ -11,4 +11,11 @@ describe('parseSeconds', function () {
     expect(parseSeconds('0:66:36')).to.equal(3996);
     expect(parseSeconds('0:15:06')).to.equal(906);
   });
+
+  it('should throw if anything other than a string is provided', function (){
+    expect(function() {
+      parseSeconds([]);
+    }).to.throw(/Expected a string/);
+  });
+  
 });
