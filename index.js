@@ -7,7 +7,7 @@ const fileLog = fs.readFileSync('./laserFiles/FileLog.CSV', 'utf-8');
 const lines = parse(fileLog);
 const grouped_lines = group_date(lines.slice(1));
 
-const date = '10/01/2016';
+const date = '10/03/2016';
 const runtime = moment.duration(grouped_lines[date], 's');
 
 console.log(
